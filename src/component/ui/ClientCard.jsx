@@ -23,8 +23,9 @@ export default function ClientCard() {
 
   ];
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const swiperRef = useRef(null);
+const prevRef = useRef(null);
+const nextRef = useRef(null);
   useEffect(() => {
       gsap.fromTo(
         ".card5",
@@ -49,14 +50,19 @@ export default function ClientCard() {
   return (
     <div className="relative">
       <Swiper
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
-        }}
+         ref={swiperRef}
+  navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onSwiper={(swiper) => {
+    setTimeout(() => {
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    });
+  }}
         slidesPerView={4}
         spaceBetween={40}
         breakpoints={{

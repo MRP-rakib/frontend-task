@@ -81,8 +81,9 @@ export default function ProjectCard() {
     },
   ];
 
-  const prevRef1 = useRef(null);
-  const nextRef1 = useRef(null);
+  const swiperRef = useRef(null);
+const prevRef1 = useRef(null);
+const nextRef1 = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       ".card4",
@@ -107,14 +108,19 @@ export default function ProjectCard() {
   return (
     <div className="relative">
       <Swiper
-        navigation={{
-          prevEl: prevRef1.current,
-          nextEl: nextRef1.current,
-        }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef1.current;
-          swiper.params.navigation.nextEl = nextRef1.current;
-        }}
+        ref={swiperRef}
+  navigation={{
+    prevEl: prevRef1.current,
+    nextEl: nextRef1.current,
+  }}
+  onSwiper={(swiper) => {
+    setTimeout(() => {
+      swiper.params.navigation.prevEl = prevRef1.current;
+      swiper.params.navigation.nextEl = nextRef1.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    });
+  }}
         slidesPerView={3}
         spaceBetween={40}
         breakpoints={{
@@ -223,7 +229,7 @@ export default function ProjectCard() {
       </button>
       <button
         ref={nextRef1}
-        className="absolute z-20 top-[50%] right-[-20px] lg:right-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
+        className="absolute z0 top-[50%] right-[-20px] lg:right-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Next slide"
       >
         <MdOutlineArrowForwardIos />
