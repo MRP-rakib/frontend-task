@@ -90,7 +90,7 @@ export default function ClientCarousel() {
 
       <button
         ref={prevRef}
-        className="absolute top-[60%] hidden lg:block left-[-20px] lg:left-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2]"
+        className="absolute top-[60%]  left-[-20px] lg:left-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2]"
         aria-label="Previous slide"
       >
         <MdOutlineArrowBackIos />
@@ -98,7 +98,7 @@ export default function ClientCarousel() {
       </button>
       <button
         ref={nextRef}
-        className="absolute top-[60%] hidden lg:block right-[-20px] lg:right-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2]"
+        className="absolute top-[60%] right-[-20px] lg:right-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2]"
         aria-label="Next slide"
       >
         <MdOutlineArrowForwardIos />
