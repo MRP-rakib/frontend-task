@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function ClientCarousel() {
+export default function ClientCard() {
   const clients = [
     { image: '/client1.png', name: 'Name Here', title: 'Great What an amazing experience', description: 'Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue, a accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel ante vel ex cursus. sit amet, consectetur adipiscing elit.' },
     { image: '/client2.png', name: 'Name Here', title: 'Great What an amazing experience', description: 'Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ex ut turpis congue, a accumsan elit ultricies. Vivamus sit amet ligula at libero ullamcorper fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer euismod libero eu quam efficitur, a elementum sem fermentum. Fusce vel ante vel ex cursus. sit amet, consectetur adipiscing elit.' },
@@ -90,7 +90,7 @@ export default function ClientCarousel() {
 
       <button
         ref={prevRef}
-        className="absolute top-[55%]  left-[-20px] lg:left-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2] cursor-pointer"
+        className="absolute z-20 top-[55%]  left-[-20px] lg:left-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Previous slide"
       >
         <MdOutlineArrowBackIos />
@@ -98,7 +98,7 @@ export default function ClientCarousel() {
       </button>
       <button
         ref={nextRef}
-        className="absolute top-[55%] right-[-20px] lg:right-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2] cursor-pointer"
+        className="absolute z-20 top-[55%] right-[-20px] lg:right-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Next slide"
       >
         <MdOutlineArrowForwardIos />

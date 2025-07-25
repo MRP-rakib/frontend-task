@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function ClientCarousel() {
+export default function ProjectCard() {
   const projects = [
     {
       image: "/project1.png",
@@ -81,8 +81,8 @@ export default function ClientCarousel() {
     },
   ];
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const prevRef1 = useRef(null);
+  const nextRef1 = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       ".card4",
@@ -108,12 +108,12 @@ export default function ClientCarousel() {
     <div className="relative">
       <Swiper
         navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
+          prevEl: prevRef1.current,
+          nextEl: nextRef1.current,
         }}
         onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.params.navigation.prevEl = prevRef1.current;
+          swiper.params.navigation.nextEl = nextRef1.current;
         }}
         slidesPerView={3}
         spaceBetween={40}
@@ -215,15 +215,15 @@ export default function ClientCarousel() {
       </Swiper>
 
       <button
-        ref={prevRef}
-        className="absolute top-[50%] left-[-20px] lg:left-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2] cursor-pointer"
+        ref={prevRef1}
+        className="absolute z-20 top-[50%] left-[-20px] lg:left-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Previous slide"
       >
         <MdOutlineArrowBackIos />
       </button>
       <button
-        ref={nextRef}
-        className="absolute top-[50%] right-[-20px] lg:right-[-100px] -translate-y-1/2 text-4xl lg:text-7xl text-[#F2F2F2] cursor-pointer"
+        ref={nextRef1}
+        className="absolute z-20 top-[50%] right-[-20px] lg:right-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Next slide"
       >
         <MdOutlineArrowForwardIos />
