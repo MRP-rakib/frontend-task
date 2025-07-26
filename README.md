@@ -23,4 +23,4 @@ yarn dev
 - Gsap: For Animation
 - Swiper.js: For Slider
 
-- ![Landing Page Screenshot](screenshots/landing-page.png](https://github.com/MRP-rakib/frontend-task/blob/fc114910f4d3308d742911baa9fe3681a8121829/screenshot.png))
+- ![Landing Page Screenshot](https://github.com/MRP-rakib/frontend-task/blob/fc114910f4d3308d742911baa9fe3681a8121829/screenshot.png)
