@@ -12,7 +12,7 @@ function Navbar() {
         setMenu(prev=>!prev)
     }
   return (
-    <nav className="py-[29px]">
+    <nav className="py-4 lg:py-6 xl:py-[28px] sticky top-0 left-0 z-50 bg-white">
       <Container>
         <div className="flex  items-center justify-between">
           <h3 className="text-nowrap uppercase text-primary text-2xl lg:text-3xl xl:text-[40px] font-black">

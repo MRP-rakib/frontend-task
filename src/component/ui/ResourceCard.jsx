@@ -27,9 +27,9 @@ function ResourceCard({ image }) {
       );
     }, []);
   return (
-    <div className="p-8 shadow-lg rounded-2xl card7">
-      <div className="w-full h-[318px] overflow-hidden">
-        <Image src={image} width={500} height={318} alt="icon" />
+    <div className="p-8 shadow-lg  rounded-2xl card7">
+      <div className="w-full h-[318px] mx-auto overflow-hidden">
+        <Image src={image} width={800} height={318} alt="icon" />
       </div>
       <p className="pt-8 text-[16px] lg:text-lg italic text-[#343434]">
         May 9, 2024
