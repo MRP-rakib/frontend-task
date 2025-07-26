@@ -222,14 +222,14 @@ const nextRef1 = useRef(null);
 
       <button
         ref={prevRef1}
-        className="absolute z-20 top-[50%] left-[-20px] lg:left-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
+        className="absolute z-20 top-[50%] left-[-20px] lg:left-[-40px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Previous slide"
       >
         <MdOutlineArrowBackIos />
       </button>
       <button
         ref={nextRef1}
-        className="absolute z0 top-[50%] right-[-20px] lg:right-[-45px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
+        className="absolute z0 top-[50%] right-[-20px] lg:right-[-40px] -translate-y-1/2 text-4xl lg:text-6xl text-[#F2F2F2] cursor-pointer"
         aria-label="Next slide"
       >
         <MdOutlineArrowForwardIos />

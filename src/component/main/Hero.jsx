@@ -26,7 +26,7 @@ function Hero() {
     });
   }, []);
   return (
-    <div className="relative bg-[url('/Frame8.png')] bg-cover md:bg-center lg:min-h-screen w-full">
+    <div className="relative bg-[url('/Frame8.png')] bg-cover bg-center bg-no-repeat lg:min-h-screen  w-full">
       <Container>
         
         <div className="max-w-[400px] lg:max-w-[736px] md:max-w-[500px] py-[100px] lg:py-[300px] flex flex-col gap-5 lg:gap-15">

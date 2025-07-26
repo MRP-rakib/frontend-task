@@ -19,7 +19,7 @@ function Navbar() {
             ridge <span className="text-secondary">street</span>
           </h3>
           <div className="hidden lg:flex items-center lg:gap-3 xl:gap-8">
-            <ul className="flex items-center gap-8 xl:gap-8 text-nowrap font-medium lg:[18px] xl:text-[20px]">
+            <ul className="flex items-center gap-5 xl:gap-8 text-nowrap font-medium lg:[18px] xl:text-[20px]">
               <li>
                 <Link href="#">Fix and Flip</Link>
               </li>

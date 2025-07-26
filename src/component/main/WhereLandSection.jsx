@@ -20,9 +20,9 @@ function WhereLandSection() {
           </p>
         </div>
         <div className="flex items-center justify-center my-20">
-          <Image src='/Group.png' width={1170} height={600} alt="image"/>
+          <Image src='/Group.png' width={1000} height={600} alt="image"/>
         </div>
-        <div className=" flex flex-col md:flex-row gap-15 lg:gap-[200px] items-center justify-center">
+        <div className=" flex flex-col md:flex-row gap-15 xl:gap-[200px] items-center justify-center">
           <LocationCard image='/Group5.png' location='Texas'/>
           <LocationCard image='/Frame21.png' location='Florida'/>
         </div>
